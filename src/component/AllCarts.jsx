@@ -1,12 +1,12 @@
 import React from 'react';
-import data from "../../public/data.json"
+// import data from "../../public/data.json"
 import Image from 'next/image';
 import Link from 'next/link';
 
-const AllCarts = () => {
+const AllCarts = async () => {
 
-    // const res = await fetch("http://localhost:3000/data.json")
-    // const data = await res.json()
+    const res = await fetch("https://assignment-7-iota.vercel.app/data.json")
+    const data = await res.json()
     // console.log(data)
 
     return (

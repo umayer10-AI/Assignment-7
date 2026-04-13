@@ -4,7 +4,7 @@ import React from 'react';
 const page = async ({params}) => {
 
     const {id} = await params
-    const res = await fetch("http://localhost:3000/data.json")
+    const res = await fetch("https://assignment-7-iota.vercel.app/data.json")
     const data = await res.json()
     const f = data.find(v => v.id === Number(id))
     console.log(f)
