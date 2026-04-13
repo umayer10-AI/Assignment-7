@@ -1,6 +1,7 @@
 import React from 'react';
 import data from "../../public/data.json"
 import Image from 'next/image';
+import Link from 'next/link';
 
 const AllCarts = () => {
 
@@ -12,7 +13,7 @@ const AllCarts = () => {
         <div className='grid grid-cols-1 lg:grid-cols-4 gap-5'>
             {
                 data.map(v => (
-                    <div key={v.id} className='text-center py-5 rounded-2xl bg-base-100 space-y-2'>
+                    <Link href={`/${v.id}`} key={v.id} className='text-center py-5 rounded-2xl bg-base-100 space-y-2'>
                         <Image height={70} width={70} className='rounded-full mx-auto' src={v.picture} alt='logo'></Image>
                         <h2 className='font-bold'>{v.name}</h2>
                         <p className='text-gray-400'>{v.days_since_contact}d ago</p>
@@ -24,7 +25,7 @@ const AllCarts = () => {
                         <div className='flex justify-center items-center'>
                             <h2 className={`px-3 py-0.5 ${v.status==="on-track" && "bg-[#244D3F] text-white" || v.status==="overdue" && "bg-[#EF4444] text-white" || v.status==="almost due" && "bg-[#EFAD44] text-black"} rounded-full`}>{v.status}</h2>
                         </div>
-                    </div>
+                    </Link>
                 ))
             }
         </div>
