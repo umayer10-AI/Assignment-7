@@ -9,7 +9,7 @@ import { RiTimeLine } from 'react-icons/ri';
 const Navbar = () => {
     const p = usePathname()
     return (
-        <div className='flex justify-between flex-col lg:flex-row gap-3 lg:gap-0 items-center bg-base-100 px-10 py-4'>
+        <div className='flex justify-between flex-col lg:flex-row border-b border-b-gray-300 gap-3 lg:gap-0 items-center bg-base-100 px-10 py-4'>
             <h2 className='text-2xl font-bold'>Keen<span className='text-[#244D3F]'>Keeper</span></h2>
             <div className='flex gap-3 items-center'>
                 <Link href={'/'} className={p==='/' ? "btn bg-[#244D3F] text-white" : "btn"}><AiOutlineHome />Home</Link>

@@ -1,5 +1,4 @@
 import React from 'react';
-// import data from "../../public/data.json"
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -13,7 +12,7 @@ const AllCarts = async () => {
         <div className='grid grid-cols-1 lg:grid-cols-4 gap-5'>
             {
                 data.map(v => (
-                    <Link href={`/${v.id}`} key={v.id} className='text-center py-5 rounded-2xl bg-base-100 space-y-2'>
+                    <Link href={`/${v.id}`} key={v.id} className='text-center shadow-xl py-5 rounded-2xl bg-base-100 space-y-2'>
                         <Image height={70} width={70} className='rounded-full mx-auto' src={v.picture} alt='logo'></Image>
                         <h2 className='font-bold'>{v.name}</h2>
                         <p className='text-gray-400'>{v.days_since_contact}d ago</p>
