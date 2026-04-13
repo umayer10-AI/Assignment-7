@@ -2,7 +2,7 @@
   {
     "id": 1,
     "name": "Alice Smith",
-    "picture": "https://example.com/photo1.jpg",
+    "picture": "https://randomuser.me/api/portraits/women/1.jpg",
     "email": "alice@example.com",
     "days_since_contact": 5,
     "status": "on-track",
@@ -14,7 +14,7 @@
   {
     "id": 2,
     "name": "Michael Brown",
-    "picture": "https://example.com/photo2.jpg",
+    "picture": "https://randomuser.me/api/portraits/men/2.jpg",
     "email": "michael@example.com",
     "days_since_contact": 13,
     "status": "almost due",
@@ -26,7 +26,7 @@
   {
     "id": 3,
     "name": "Sarah Johnson",
-    "picture": "https://example.com/photo3.jpg",
+    "picture": "https://randomuser.me/api/portraits/women/3.jpg",
     "email": "sarah@example.com",
     "days_since_contact": 20,
     "status": "overdue",
@@ -38,7 +38,7 @@
   {
     "id": 4,
     "name": "David Lee",
-    "picture": "https://example.com/photo4.jpg",
+    "picture": "https://randomuser.me/api/portraits/men/4.jpg",
     "email": "david@example.com",
     "days_since_contact": 7,
     "status": "on-track",
@@ -50,7 +50,7 @@
   {
     "id": 5,
     "name": "Emma Wilson",
-    "picture": "https://example.com/photo5.jpg",
+    "picture": "https://randomuser.me/api/portraits/women/5.jpg",
     "email": "emma@example.com",
     "days_since_contact": 11,
     "status": "almost due",
@@ -62,7 +62,7 @@
   {
     "id": 6,
     "name": "James Taylor",
-    "picture": "https://example.com/photo6.jpg",
+    "picture": "https://randomuser.me/api/portraits/men/6.jpg",
     "email": "james@example.com",
     "days_since_contact": 18,
     "status": "overdue",
@@ -74,7 +74,7 @@
   {
     "id": 7,
     "name": "Olivia Martin",
-    "picture": "https://example.com/photo7.jpg",
+    "picture": "https://randomuser.me/api/portraits/women/7.jpg",
     "email": "olivia@example.com",
     "days_since_contact": 3,
     "status": "on-track",
@@ -86,7 +86,7 @@
   {
     "id": 8,
     "name": "Daniel Garcia",
-    "picture": "https://example.com/photo8.jpg",
+    "picture": "https://randomuser.me/api/portraits/men/8.jpg",
     "email": "daniel@example.com",
     "days_since_contact": 14,
     "status": "almost due",
@@ -98,7 +98,7 @@
   {
     "id": 9,
     "name": "Sophia Anderson",
-    "picture": "https://example.com/photo9.jpg",
+    "picture": "https://randomuser.me/api/portraits/women/9.jpg",
     "email": "sophia@example.com",
     "days_since_contact": 25,
     "status": "overdue",
@@ -110,7 +110,7 @@
   {
     "id": 10,
     "name": "Liam Thomas",
-    "picture": "https://example.com/photo10.jpg",
+    "picture": "https://randomuser.me/api/portraits/men/10.jpg",
     "email": "liam@example.com",
     "days_since_contact": 6,
     "status": "on-track",
