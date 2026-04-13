@@ -70,6 +70,9 @@ const CartDetails = ({p}) => {
                         </div>
                     </div>
                 </div>
+                <div>
+                    
+                </div>
             </div>
         </div>
     );
