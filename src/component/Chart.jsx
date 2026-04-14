@@ -8,11 +8,21 @@ const Chart = () => {
 
     const {textChart,callChart,videoChart} = useContext(Data)
 
-    const data = [
-      { name: 'Call', value: callChart.length, fill: '#222f3e' },
-      { name: 'Text', value: textChart.length, fill: '#5f27cd' },
-      { name: 'Video', value: videoChart.length, fill: '#218c74' },
-    ];
+    const initial = callChart.length === 0
+                    && textChart.length === 0
+                    && videoChart.length === 0
+
+    const data = initial ? 
+        [
+            { name: 'Call', value: 1, fill: '#222f3e' },
+            { name: 'Text', value: 1, fill: '#5f27cd' },
+            { name: 'Video', value: 1, fill: '#218c74' },
+        ]
+        : [
+            { name: 'Call', value: callChart.length, fill: '#222f3e' },
+            { name: 'Text', value: textChart.length, fill: '#5f27cd' },
+            { name: 'Video', value: videoChart.length, fill: '#218c74' },
+        ]
 
     return (
         <div className='flex justify-center items-center'>

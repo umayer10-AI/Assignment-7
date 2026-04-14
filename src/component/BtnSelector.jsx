@@ -7,6 +7,7 @@ import { MdOutlineTextsms } from 'react-icons/md';
 import call from '../assets/call.png'
 import text from '../assets/text.png'
 import video from '../assets/video.png'
+import { Slide, toast } from 'react-toastify';
 
 const BtnSelector = ({p}) => {
 
@@ -21,6 +22,30 @@ const BtnSelector = ({p}) => {
         const f = info.find(v => v.type === obj.type && v.name === obj.name)
         if(!f){
             setI(c => [...c,obj])
+            toast.success(`${t} with ${obj.name}`, {
+                position: "top-center",
+                autoClose: 498,
+                hideProgressBar: false,
+                closeOnClick: false,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+                theme: "dark",
+                transition: Slide,
+            });
+        }
+        else{
+            toast.warning(`Already ${t} with ${obj.name}`, {
+                position: "top-center",
+                autoClose: 498,
+                hideProgressBar: false,
+                closeOnClick: false,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+                theme: "dark",
+                transition: Slide,
+            });
         }
         if(t === "Call"){
             setC(c => [...c,t])
@@ -28,7 +53,7 @@ const BtnSelector = ({p}) => {
         else if(t === "Text"){
             setT(c => [...c,t])
         }
-        else if(t === "Video"){
+        else if(t === "Meetup"){
             setV(c => [...c,t])
         }
     }
@@ -43,7 +68,7 @@ const BtnSelector = ({p}) => {
                             <h2 className='flex justify-center text-2xl'><MdOutlineTextsms /></h2>
                             <h2 className='text-2xl font-semibold'>Text</h2>
                         </div>
-                        <div onClick={() => a("Video",video)} className='text-center py-3 space-y-2 rounded-xl bg-base-300 hover:bg-gray-200 cursor-pointer active:scale-95'>
+                        <div onClick={() => a("Meetup",video)} className='text-center py-3 space-y-2 rounded-xl bg-base-300 hover:bg-gray-200 cursor-pointer active:scale-95'>
                             <h2 className='flex justify-center text-2xl'><FiVideo /></h2>
                             <h2 className='text-2xl font-semibold'>Video</h2>
                         </div>
