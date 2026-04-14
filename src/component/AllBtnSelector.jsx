@@ -1,3 +1,4 @@
+"use client"
 import { Data } from '@/Context/Context';
 import Image from 'next/image';
 import React, { useContext } from 'react';
