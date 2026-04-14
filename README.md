@@ -1,36 +1,92 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🌱 KeenKeeper
 
-## Getting Started
+## 📌 Project Overview
 
-First, run the development server:
+**KeenKeeper** is a modern web application designed to help users manage and nurture their personal relationships. It allows users to track interactions with friends, stay connected, and maintain meaningful connections over time.
+
+---
+
+## 🚀 Description
+
+KeenKeeper provides a clean and user-friendly interface where users can explore their connections, track communication activities (like calls, texts, and meetups), and visualize interaction data. The goal is to help users stay consistent in maintaining relationships.
+
+---
+
+## 🛠 Technologies Used
+
+* ⚡ Next.js (App Router)
+* ⚛ React.js
+* 🎨 Tailwind CSS
+* 🌼 DaisyUI
+* 📊 Recharts (for analytics)
+* 🔔 React Toastify
+
+---
+
+## ✨ Key Features
+
+### 📇 Friend Management
+
+* View all friends in a clean card layout
+* Detailed profile page with contact info and relationship status
+* Track days since last interaction
+
+### 📅 Interaction Tracking System
+
+* Log interactions like **Call, Text, and Meetup**
+* Prevent duplicate interactions
+* Real-time toast notifications for actions
+
+### 📊 Analytics Dashboard
+
+* Visualize interaction data using charts
+* Track communication patterns
+* Dynamic updates based on user activity
+
+---
+
+## 📷 UI Highlights
+
+* Responsive and modern design
+* Custom 404 page
+* Error handling system
+* Loading spinner for better UX
+
+---
+
+## 🎯 Purpose
+
+This project helps users build a habit of staying connected with their important relationships by tracking and reminding them to interact regularly.
+
+---
+
+## 🔗 Live Demo
+
+👉 https://assignment-7-iota.vercel.app/
+
+---
+
+## 📂 Installation
 
 ```bash
+git clone https://github.com/umayer10-AI/Assignment-7
+cd keenkeeper
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## 💡 Future Improvements
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+* Add authentication system
+* Reminder notifications
+* Edit/Delete friend functionality
+* Backend integration with database
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## 👨‍💻 Author
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+**Umayer Ahmad**
+CSE Student | Aspiring Software Developer
