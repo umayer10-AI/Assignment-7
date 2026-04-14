@@ -2,6 +2,7 @@
 import React, { useContext } from 'react';
 import AllBtnSelector from './AllBtnSelector';
 import { Data } from '@/Context/Context';
+import Link from 'next/link';
 
 const EmtyCheck = () => {
 
@@ -19,7 +20,7 @@ const EmtyCheck = () => {
                     <p className="text-gray-500 mb-6">
                         Looks like you have not added anything to your cart yet.
                     </p>
-                    <button className="btn btn-success">Continue Shopping</button>
+                    <Link href={'/'} className="btn btn-success">Continue Shopping</Link>
                 </div>
             }
         </div>
