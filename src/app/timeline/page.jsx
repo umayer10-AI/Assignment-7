@@ -1,4 +1,5 @@
 import AllBtnSelector from '@/component/AllBtnSelector';
+import DropDownPage from '@/component/DropDownPage';
 import React from 'react';
 import { MdKeyboardArrowDown } from 'react-icons/md';
 
@@ -11,10 +12,7 @@ const page = () => {
 
             <div className="dropdown dropdown-start mb-5">
                 <div tabIndex={0} role="button" className="btn m-1 bg-green-700 text-white">Filter timeline <MdKeyboardArrowDown className='text-2xl' /></div>
-                <ul tabIndex="-1" className="dropdown-content menu bg-sky-300 rounded-box z-1 w-52 p-2 shadow-sm">
-                    <li><a>Item 1</a></li>
-                    <li><a>Item 2</a></li>
-                </ul>
+                <DropDownPage></DropDownPage>
             </div>
 
 

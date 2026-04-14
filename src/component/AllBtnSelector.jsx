@@ -15,7 +15,7 @@ const AllBtnSelector = () => {
                         <Image width={40} height={40} src={v.img.src} alt='logo'></Image>
                         <div className='text-gray-400 font-semibold'>
                             <h2><span className='text-black font-bold'>{v.type}</span> with {v.name}</h2>
-                            <h2>{v.next_due_date}</h2>
+                            <h2>{v.today}</h2>
                         </div>
                     </div>
                 ))

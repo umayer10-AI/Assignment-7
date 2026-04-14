@@ -11,17 +11,24 @@ import { Slide, toast } from 'react-toastify';
 
 const BtnSelector = ({p}) => {
 
-    const {info,setI,setC,setT,setV} = useContext(Data)
+    const {info,setI,setAll,setC,setT,setV} = useContext(Data)
 
     const a = (t,i) => {
+        const today = new Date().toLocaleDateString("en-US", {
+            day: "numeric",
+            month: "long",
+            year: "numeric"
+        });
         const obj = {
             ...p,
             type: t,
-            img: i
+            img: i,
+            today,
         }
         const f = info.find(v => v.type === obj.type && v.name === obj.name)
         if(!f){
             setI(c => [...c,obj])
+            setAll(c => [...c,obj])
             toast.success(`${t} with ${obj.name}`, {
                 position: "top-center",
                 autoClose: 498,
