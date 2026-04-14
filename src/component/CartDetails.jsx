@@ -5,6 +5,7 @@ import { FiVideo } from 'react-icons/fi';
 import { LuPhoneCall } from 'react-icons/lu';
 import { MdOutlineTextsms } from 'react-icons/md';
 import { RiDeleteBin2Line, RiInboxArchiveFill } from 'react-icons/ri';
+import BtnSelector from './BtnSelector';
 
 const CartDetails = ({p}) => {
 
@@ -55,20 +56,7 @@ const CartDetails = ({p}) => {
                 </div>
                 <div className='p-5 rounded-2xl shadow-xl'>
                     <h2 className='font-semibold mb-3'>Quick Check-In</h2>
-                    <div className='grid grid-cols-1 lg:grid-cols-3 gap-5'>
-                        <div className='text-center py-3 space-y-2 rounded-xl bg-base-300 hover:bg-gray-200 cursor-pointer active:scale-95'>
-                            <h2 className='flex justify-center text-2xl'><LuPhoneCall /></h2>
-                            <h2 className='text-2xl font-semibold'>Call</h2>
-                        </div>
-                        <div className='text-center py-3 space-y-2 rounded-xl bg-base-300 hover:bg-gray-200 cursor-pointer active:scale-95'>
-                            <h2 className='flex justify-center text-2xl'><MdOutlineTextsms /></h2>
-                            <h2 className='text-2xl font-semibold'>Text</h2>
-                        </div>
-                        <div className='text-center py-3 space-y-2 rounded-xl bg-base-300 hover:bg-gray-200 cursor-pointer active:scale-95'>
-                            <h2 className='flex justify-center text-2xl'><FiVideo /></h2>
-                            <h2 className='text-2xl font-semibold'>Video</h2>
-                        </div>
-                    </div>
+                    <BtnSelector p={p}></BtnSelector>
                 </div>
                 <div>
                     

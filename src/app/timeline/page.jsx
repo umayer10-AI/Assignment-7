@@ -1,9 +1,9 @@
-import Image from 'next/image';
+import AllBtnSelector from '@/component/AllBtnSelector';
 import React from 'react';
-import call from '../../assets/call.png'
 import { MdKeyboardArrowDown } from 'react-icons/md';
 
 const page = () => {
+
     return (
         <div className='max-w-[80%] mx-auto w-full'>
 
@@ -19,13 +19,7 @@ const page = () => {
 
 
 
-            <div className='flex items-center gap-4 p-4 rounded-2xl bg-white shadow-xl'>
-                <Image src={call} alt='logo'></Image>
-                <div className='text-gray-400 font-semibold'>
-                    <h2><span className='text-black font-bold'>Meetup</span> with Tom Baker</h2>
-                    <h2>March 28, 2026</h2>
-                </div>
-            </div>
+            <AllBtnSelector></AllBtnSelector>
         </div>
     );
 };
