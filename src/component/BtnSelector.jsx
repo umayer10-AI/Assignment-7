@@ -10,7 +10,7 @@ import video from '../assets/video.png'
 
 const BtnSelector = ({p}) => {
 
-    const {info,setI} = useContext(Data)
+    const {info,setI,setC,setT,setV} = useContext(Data)
 
     const a = (t,i) => {
         const obj = {
@@ -21,6 +21,15 @@ const BtnSelector = ({p}) => {
         const f = info.find(v => v.type === obj.type && v.name === obj.name)
         if(!f){
             setI(c => [...c,obj])
+        }
+        if(t === "Call"){
+            setC(c => [...c,t])
+        }
+        else if(t === "Text"){
+            setT(c => [...c,t])
+        }
+        else if(t === "Video"){
+            setV(c => [...c,t])
         }
     }
 
