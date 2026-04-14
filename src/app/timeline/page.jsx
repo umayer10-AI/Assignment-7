@@ -1,5 +1,6 @@
 import AllBtnSelector from '@/component/AllBtnSelector';
 import DropDownPage from '@/component/DropDownPage';
+import EmtyCheck from '@/component/EmtyCheck';
 import Searching from '@/component/Searching';
 import React from 'react';
 import { MdKeyboardArrowDown } from 'react-icons/md';
@@ -22,7 +23,7 @@ const page = () => {
             </div>
 
 
-            <AllBtnSelector></AllBtnSelector>
+            <EmtyCheck></EmtyCheck>
         </div>
     );
 };

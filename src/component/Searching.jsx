@@ -9,7 +9,8 @@ const Searching = () => {
     const a = (e) => {
         e.preventDefault()
         if(inputValue !== ''){
-            const check = Allinfo.filter(v => v.name.toLowerCase().includes(inputValue.toLowerCase()))
+            const check = Allinfo.filter(v => v.name.toLowerCase().includes(inputValue.toLowerCase()) ||
+            v.type.toLowerCase().includes(value.toLowerCase()))
             setI(check)
         }
         else{
