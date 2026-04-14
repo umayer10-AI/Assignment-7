@@ -5,7 +5,7 @@ import { RiDeleteBin2Line, RiInboxArchiveFill } from 'react-icons/ri';
 import BtnSelector from './BtnSelector';
 
 const CartDetails = ({p}) => {
-    console.log(p.picture)
+    // console.log(p.picture)
     return (
         <div className='grid grid-cols-1 lg:grid-cols-3 gap-5 mt-10 max-w-[80%] mx-auto'>
             <div className='flex flex-col gap-3'>

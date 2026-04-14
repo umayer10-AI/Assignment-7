@@ -1,5 +1,6 @@
 import AllBtnSelector from '@/component/AllBtnSelector';
 import DropDownPage from '@/component/DropDownPage';
+import Searching from '@/component/Searching';
 import React from 'react';
 import { MdKeyboardArrowDown } from 'react-icons/md';
 
@@ -10,9 +11,14 @@ const page = () => {
 
             <h2 className='text-4xl font-bold mt-10 mb-5'>Timeline </h2>
 
-            <div className="dropdown dropdown-start mb-5">
-                <div tabIndex={0} role="button" className="btn m-1 bg-green-700 text-white">Filter timeline <MdKeyboardArrowDown className='text-2xl' /></div>
-                <DropDownPage></DropDownPage>
+            <div className='flex justify-between flex-col lg:flex-row'>
+                <div className="dropdown dropdown-start mb-5">
+                    <div tabIndex={0} role="button" className="btn m-1 bg-green-700 text-white">Filter timeline <MdKeyboardArrowDown className='text-2xl' /></div>
+                    <DropDownPage></DropDownPage>
+                </div>
+                <div>
+                    <Searching></Searching>
+                </div>
             </div>
 
 
