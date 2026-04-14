@@ -8,7 +8,7 @@ const page = () => {
     <div>
       <Banner></Banner>
       <Boxes></Boxes>
-      <hr className='text-gray-600 max-w-[80%] mx-auto my-10'></hr>
+      <hr className='text-gray-300 max-w-[80%] mx-auto my-10'></hr>
       <Cart></Cart>
     </div>
   );

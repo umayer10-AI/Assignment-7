@@ -11,7 +11,7 @@ const CartDetails = ({p}) => {
     return (
         <div className='grid grid-cols-1 lg:grid-cols-3 gap-5 mt-10 max-w-[80%] mx-auto'>
             <div className='flex flex-col gap-3'>
-                <div className='text-center space-y-2 shadow-xl rounded-xl py-5'>
+                <div className='text-center space-y-2 shadow-xl bg-white rounded-xl py-5'>
                         <Image height={70} width={70} className='rounded-full mx-auto' src={p.picture} alt='logo'></Image>
                         <h2 className='font-bold'>{p.name}</h2>
                         <div className='flex justify-center items-center'>
@@ -44,7 +44,7 @@ const CartDetails = ({p}) => {
                         <h2 className='font-semibold text-gray-500'>Next Due</h2>
                     </div>
                 </div>
-                <div>
+                <div className='bg-white'>
                     <div className='shadow-md rounded-xl p-4'>
                         <div className='flex justify-between items-center'>
                             <h2 className='font-semibold'>Relationship Goal</h2>
@@ -56,15 +56,15 @@ const CartDetails = ({p}) => {
                 <div className='p-5 rounded-2xl shadow-xl'>
                     <h2 className='font-semibold mb-3'>Quick Check-In</h2>
                     <div className='grid grid-cols-1 lg:grid-cols-3 gap-5'>
-                        <div className='text-center py-3 space-y-2 rounded-xl bg-base-200'>
+                        <div className='text-center py-3 space-y-2 rounded-xl bg-base-300 hover:bg-gray-200 cursor-pointer active:scale-95'>
                             <h2 className='flex justify-center text-2xl'><LuPhoneCall /></h2>
                             <h2 className='text-2xl font-semibold'>Call</h2>
                         </div>
-                        <div className='text-center py-3 space-y-2 rounded-xl bg-base-200'>
+                        <div className='text-center py-3 space-y-2 rounded-xl bg-base-300 hover:bg-gray-200 cursor-pointer active:scale-95'>
                             <h2 className='flex justify-center text-2xl'><MdOutlineTextsms /></h2>
                             <h2 className='text-2xl font-semibold'>Text</h2>
                         </div>
-                        <div className='text-center py-3 space-y-2 rounded-xl bg-base-200'>
+                        <div className='text-center py-3 space-y-2 rounded-xl bg-base-300 hover:bg-gray-200 cursor-pointer active:scale-95'>
                             <h2 className='flex justify-center text-2xl'><FiVideo /></h2>
                             <h2 className='text-2xl font-semibold'>Video</h2>
                         </div>
