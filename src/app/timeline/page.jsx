@@ -1,4 +1,3 @@
-import AllBtnSelector from '@/component/AllBtnSelector';
 import DropDownPage from '@/component/DropDownPage';
 import EmtyCheck from '@/component/EmtyCheck';
 import Searching from '@/component/Searching';

@@ -43,7 +43,7 @@ const CartDetails = ({p}) => {
                     </div>
                 </div>
                 <div className='bg-white'>
-                    <div className='shadow rounded-xl p-4'>
+                    <div className='shadow p-4'>
                         <div className='flex justify-between items-center'>
                             <h2 className='font-semibold'>Relationship Goal</h2>
                             <button className='btn'>Edit</button>
@@ -51,7 +51,7 @@ const CartDetails = ({p}) => {
                         <h2 className='text-gray-500'>Connect every <span className='font-bold text-black'>{p.goal} days</span></h2>
                     </div>
                 </div>
-                <div className='p-5 rounded-2xl shadow bg-white'>
+                <div className='p-5 shadow bg-white'>
                     <h2 className='font-semibold mb-3'>Quick Check-In</h2>
                     <BtnSelector p={p}></BtnSelector>
                 </div>
