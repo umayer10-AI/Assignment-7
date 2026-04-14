@@ -10,9 +10,13 @@ const DropDownPage = () => {
         const information = Allinfo.filter(v => v.type === show)
         setI(information)
     }
+    const b = () => {
+        setI(Allinfo)
+    }
 
     return (
         <ul tabIndex="-1" className="dropdown-content menu bg-sky-300 rounded-box z-1 w-52 p-2 shadow-sm">
+            <li><button onClick={b}>All</button></li>
             <li><button onClick={() => a('Call')}>Call</button></li>
             <li><button onClick={() => a('Text')}>Text</button></li>
             <li><button onClick={() => a('Meetup')}>Video</button></li>
